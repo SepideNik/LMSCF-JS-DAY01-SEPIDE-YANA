@@ -1,0 +1,43 @@
+.main{
+	width: 100%;
+	height: 900px;
+	 display: flex;
+    flex-direction: row;
+    justify-content: center;
+	/* margin: auto;
+	text-align: center; 
+	-webkit-align-items: center;
+	-ms-flex-align:center;
+	align-items: center;*/
+}
+.nullBox{
+	background-color: #D96281;
+}
+.sentence{
+	background-color: #3B3E56;	
+	font-size: 30px
+}
+#container  {	
+	width:550px;
+	height:550px;	
+	display: flex;
+	justify-content: space-around;
+ 	align-items: center;
+	flex-flow: row wrap;
+}	
+#container div {
+
+	padding:1px; 
+	width:90px; 
+	height:90px;
+	color: white;	
+
+}
+.boxContainer
+{
+	width:90px; 
+	height:90px;
+	text-align: center;
+	display: table-cell;
+    vertical-align: middle
+}
