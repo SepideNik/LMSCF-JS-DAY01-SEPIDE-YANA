@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+
+		h3, p {
+			display: inline;
+		}
+
+		p {
+			font-weight: bold;
+			color: purple;
+		}
+	</style>
+</head>
+<body>
+	
+	<center>
+		<h3>English:</h3>
+		<p id="sentence"></p>
+		<p>.</p>
+		<br>
+
+		<h3>German:</h3>
+		<p id="sentenceDe"></p>
+		<p>.</p>
+		<br>
+
+		<h3>Russian:</h3>
+		<p id="sentenceRu"></p>
+		<p>.</p>
+		<br>
+
+		<h3>Ukrainian:</h3>
+		<p id="sentenceUa"></p>
+		<p>.</p>
+		<br>
+
+		<h3>Persian:</h3>
+		<p id="sentencePe"></p>
+		<p>.</p>
+	</center>
+
+	<script>
+
+		//three dimensional array
+		var arr = 
+		[
+		[["Vienna"], ["London"], ["Moscow"], ["Kiew"], ["Tehran"]],
+		[[" ist"], [" is"], [""], [""],[" hast"]],	
+		[[""], [" eine"], [" a"], [""], [" yek"]],
+		[[" harne"], [" krasiviy"], [" schöne"], [" nice"],[" shahre"]],
+		[[" ziba"], [" misto"], [" gorod"], [" Stadt"], [" city"]]
+		]
+
+	// English sentence
+
+		var sentenceEn = arr[0][0] + arr[1][1] + arr [2][2] + arr [3][3] + arr [4][4];
+
+		document.getElementById("sentence").innerHTML = sentenceEn;
+
+	// German sentence
+
+		var sentenceDe = arr[0][1] + arr[1][0] + arr [2][1] + arr [3][2] + arr [4][3];
+
+		document.getElementById("sentenceDe").innerHTML = sentenceDe;
+	
+	//Russian sentence
+
+	var sentenceRu = arr[0][2] + arr[1][2] + arr [2][0] + arr [3][1] + arr [4][2];
+
+		document.getElementById("sentenceRu").innerHTML = sentenceRu;
+		var grayText = arr[1][2]; 
+
+		
+
+	//Ukrainian sentence
+
+	var sentenceUa = arr[0][3] + arr[1][2] + arr [2][3] + arr [3][0] + arr [4][1];
+
+		document.getElementById("sentenceUa").innerHTML = sentenceUa;
+
+	//Persian sentence	
+
+	var sentencePe = arr[0][4] + arr[1][4] + arr [2][4] + arr [3][4] + arr [4][0];
+
+		document.getElementById("sentencePe").innerHTML = sentencePe;
+
+	</script>
+</body>
+</html>
