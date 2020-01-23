@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1 id="h1"></h1>
+	<h2 id="h2"></h2>
+	<script>
+		console.log("Hello from the Console")
+
+		var Text = "Hello from the Browser";
+		document.getElementById("h1").innerHTML = Text;
+		var Age = 25;
+		var sentence1= "Hi my name is Martin";
+		document.getElementById("h2").innerHTML = sentence1 + " and I am " + Age + " years old"; 
+
+		var players = ["Martin", "Thomas", "Peter", "Mathias", "Niki"];
+		var sentence2 = "The most valuable player of the match is ";
+		console.log(sentence2 + players[2])	
+	</script>
+	<script src="Basic1.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
