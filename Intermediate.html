@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="n1"></div>
+	<div id="n2"></div>
+	<div id="n3"></div>
+	<div id="n4"></div>
+	<div id="n5"></div>
+	<div id="n6"></div>
+	<div id="n7"></div>
+	<div id="n8"></div>
+	<script >
+		var cars = ["Tesla", "Audi", "Renault", "Volvo", "Mazda", "Fiat", "Ferrari"];
+		//console.log(cars.sort())
+
+		var fruits = ["Apple", "Banana", "Kiwi"];
+		var orange = "Orange";
+		fruits.push(orange);
+		//console.log(fruits);
+
+		fruits.pop();
+		//console.log(fruits);
+
+		var animals = ["Monkey", "Horse", "Dog"]
+		animals.sort();
+		//console.log(animals)
+
+		var Cat = "Cat";
+		animals.unshift(Cat);
+		//console.log(animals)
+
+		var newString = "mango/cherries/kiwi/grapes/pear/peach/orange/lemon";
+		var newArr = newString.split("/");
+		console.log(newArr)
+
+
+		document.getElementById("n1").innerHTML = newArr[0];
+		document.getElementById("n2").innerHTML = newArr[1];
+		document.getElementById("n3").innerHTML = newArr[2];
+		document.getElementById("n4").innerHTML = newArr[3];
+		document.getElementById("n5").innerHTML = newArr[4];
+		document.getElementById("n6").innerHTML = newArr[5];
+		document.getElementById("n7").innerHTML = newArr[6];
+		document.getElementById("n8").innerHTML = newArr[7];
+	</script>
+</body>
+</html>
